@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+  topics :
+  links, images, media, youtube, favicon
+  
+    students should:
+    type this manually first
+    then modify paths-->
+<html lang="en">
+<head>
+    <!--CHARACTER ENCODING-->
+    <meta charset="UTF-8">
+    <!--responsive meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--page description-->
+    <meta name="viewport" content="day 2 html links images media">
+
+    <!--page title-->
+    <title>day 2 - links images media</title>
+
+    <!--
+    favicon setup
+    favicon is the small icon
+    favicon:
+    
+    file should be :
+    favicon.ico
+    
+    placed in same folder-->
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    
+    <!--==================-->
+    <!-- navigation links section-->
+     <!--=================-->
+
+     <h1>website navigation</h1>
+
+     <!-- 
+     <a> tag creates hyperlinks.
+        
+        href attribute:
+        defines destination
+
+        target="-blank":
+        opens link in new tab
+        -->
+        <a href="https://www.google.com/" target="_blank" >
+            open google(absolute link)
+        </a> 
+
+        <br><br>
+
+        <a href="https://www.flaticon.com/free-icon/down-arrow_2997738?term=download&page=1&position=91&origin=tag&related_id=2997738">
+            open link(relative link)
+
+        </a>
+        <br><br>
+
+        <a href="#image_section">
+            jump to image section(internal link)
+        </a>
+        <hr>
+        <!--=============================-->
+        <!-- image section-->
+         <!-- ============================-->
+          <p> </p>
+          <h2 id="image_section">images section</h2>
+
+          <!--
+          <img> tag displays images.
+
+          src:
+          image file path
+
+          alt:
+          text shown if image fails
+          width/height:
+          controls image size
+          -->
+          <img 
+          src="image.jpg"
+          alt="sample image"
+          width="300"
+          height="200">
+        </body>
+        <br><br>
+        <!-- cliakable image-->
+         <a href="https://images.pexels.com/photos/34636070/pexels-photo-34636070.jpeg">
+         <img
+         src="click_image.jpeg"
+         alt="clickable image"
+         width="200"
+         height="300">
+         </a>
+         <h2> file path examples</h2>
+
+         <!-- same folder-->
+
+         <img
+         src="image.jpg"
+         alt="same folder image"
+         width="200"
+         height="300">
+         <br><br>
+
+         <!-- subfolder -->
+          <img
+          src="images.jpg"
+          alt="subfolder"
+          width="200"
+         height="300">
+         <br><br>
+         <!--=========================-->
+         <h2>audio player</h2>
+
+         <!--
+         <audio>
+            tag plays audio.
+            controls:
+            shows palys button.
+         -->
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                yuor browser does nor support audio.
+            </audio>
+
+            <!--=====================-->
+
+            <!-- video section -->
+              <!--=====================-->
+              <h2>video player </h2>
+
+              <!-- 
+              <video> tag palys video
+                controls:
+                show control.
+                width:
+                video size
+              -->
+                <video width="400" controls autoplay muted>
+                    <source src="video.mp4" type="video/mp4">
+                    your browser does not support video
+                </video>
+                <!--========================-->
+                <h2> youtube video</h2>
+                <iframe width="880" height="495" src="https://www.youtube.com/embed/BqGm6DlJE1k" title="The Panama Canal: The Impossible Construction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   <!-- create:
+    gallery_page.html
+    include:
+    8 images 
+    clickable images
+    proper alt text
+    
+    create:
+    multimedia_page.hlml
+    include:
+    
+    navigation menu
+    images
+    video
+    audio
+    youtube iframe-->             
+
+
+         
+    
+</body>
+</html>
