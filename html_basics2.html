@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<!-- day 3 master template
+ topics: lists, tables, semantic layout
+ this file represent a real webpage stucture   -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 3- lists, tables, layout </title>
+</head>
+<body>
+    <!-- ======================= -->
+     <!-- header -->
+     <!--======================= -->
+
+     <header>
+        <!--  
+        <header> contains: logo, title, intro  
+        -->
+            <h1> my website</h1>
+            <p> learning HTML day 3</p>
+
+
+     </header>
+
+     <hr>
+     <!-- ========================-->
+      <!-- navigation-->
+       <!-- ====================== -->
+       
+       <nav>
+        <!-- navigation links used for menu-->
+         
+        <a href="#">home</a> |
+        <a href="#">about</a> |
+        <a href="#">contact</a>
+
+
+
+       </nav>
+       <hr>
+       <!--=======================-->
+       <!-- main content -->
+        <!-- ======================-->
+
+        <main>
+
+            <!--==================-->
+            <!-- list section-->
+             <!---=================-->
+             
+          <section>
+            <h2> list examples</h2>
+
+            <!-- unordered list-->
+
+            <h3> unordered list (shoping list)</h3>
+
+            <ul type="disk"> <!-- disk, square, circle -->
+                <li> milk</li>
+                <li> bread</li>
+                <li> butter</li>
+
+            </ul>
+            <!-- ordered list -->
+             <h3> ordered list (steps)</h3>
+             <ol type="a" start="5" reversed>  <!-- 1, A, a,I,i ye sab ordered list ka indexing batata hai -->  <!--   reversed: ye order ko reverse ka deta hai
+                 start: order start karne ke liye use hota hai-->
+                <li> wake up </li>
+                <li> study HTMl </li>
+                <li> practice coding </li>
+             </ol>
+
+             <!-- NESTED LIST -->
+
+             <h3> NESTED LIST</h3>
+             <ul> 
+                <li> fruits
+                    <ul> 
+                        <li> apple</li>
+                        <li> banana</li>
+
+                    </ul>
+                </li>
+                <li> vegetables
+                <ul> 
+                    <li> potato</li>
+                    <li> tomato</li>
+
+                </ul>
+                    
+                </li>
+             </ul>
+
+
+
+          </section>  
+          <h3> colspan example </h3>
+          <table border="2"> 
+            <!-- table header-->
+             <thead> 
+                <tr> 
+                    <th> name </th>
+                    <th> subject </th>
+                    <th> marks </th>
+                </tr>
+             </thead>
+             <!--  table body-->
+               <tbody>
+                <tr>
+                    <td> Gaurav</td>
+                    <td> physics</td>
+                    <td> 85</td>
+                </tr>
+                <tr> 
+                    <td> shivam</td>
+                    <td> math</td>
+                    <td> 90</td>
+                    
+                </tr>
+                
+            </tbody>
+            <tfoot> 
+                <tr> 
+                    <td colspan="2">total</td>
+                    <td>175 </td>
+                </tr>
+             </tfoot>
+
+            </table>
+            
+            
+            <table border="2"> 
+            <!-- table header-->
+             <thead> 
+                <tr> 
+                    <th> name </th>
+                    <th> roll no. </th>
+                    <th> subjects </th>
+                    <th> marks </th>
+                </tr>
+             </thead>
+             <!--  table body-->
+               <tbody>
+                <tr>
+                    <td> Gaurav</td>
+                    <td> 1</td>
+                    <th> math </th>
+                    <td> 85</td>
+                </tr>
+                <tr> 
+                    <td> saurav</td>
+                    <td> 2</td>
+                    <td> science</td>
+                    <td> 90</td>
+                    
+                </tr>
+                <tr>
+                    <td> shivam</td>
+                    <td> 3</td>
+                    <th> math </th>
+                    <td> 80</td>
+                </tr>
+                <tr> 
+                    <td> sachin</td>
+                    <td> 4</td>
+                    <td> science</td>
+                    <td> 95</td>
+                    
+                </tr>
+                
+                
+            </tbody>
+            <!-- table footer -->
+             <tfoot> 
+                <tr> 
+                    <td colspan="2">total</td>
+                    <td> 350</td>
+                </tr>
+             </tfoot>
+
+            </table> 
+            <h3> rowspan example</h3>
+             <table border="2"> 
+                <tr> 
+                    <th>name </th>
+                    <th>day </th>
+                    <th>subject </th>
+                </tr>
+
+                <tr>
+                    <th rowspan="2">gaurav</th>
+                    <th>monday</th>
+                    <th> math</th>
+                </tr>
+                
+             </table>
+
+
+
+        </main>
+    
+</body>
+</html>
