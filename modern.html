@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> figure and figcaption</h2>
+
+    <!-- 
+    <figure> groups media content.
+        
+        <figacaption> adds caption-->
+
+    <figure>
+        <img
+        src="ChatGPT Image May 11, 2026 at 10_52_44 AM.png"
+        alt="wallpaper"
+        width="400"
+        >
+        <figcaption>
+            beutiful wallpaper image
+        </figcaption>
+    </figure>
+    <!-- details and summary-->
+     <section>
+        <h2> expandable FAQ section</h2>
+
+        <!-- 
+        <details> creates expandable area
+         <summary> is clickable   -->
+            <details>
+                <summary> what is html?</summary>
+
+                <p>
+                    html stands for hypertext markup language.
+                    it is used to create web page structure.
+                </p>
+                <br><br>
+            </details>  
+            <!-- progress bar-->
+             <p> html course progrss:</p>
+
+             <progress value="70" max="100"></progress>
+             <p> project upload progress:</p>
+             <progress value="45" max="100"></progress>
+             <P> battery level:</P>
+             <meter value="0.8">80%</meter>
+             <Br>
+                <P> student performance:</P>
+             <meter 
+             value="95"
+             min="0"
+             max="100"
+             low="20"
+             high="80"
+             optimum="75"
+             ></meter>
+             <br><br>
+            
+
+     </section>
+
+     <section>
+        <h2> canvas example</h2>
+
+        <!--
+        <canvas> used for drawing graphics.
+            canvas itself is blank.
+            java script draws inside it.
+            -->
+            <canvas
+            id="mycanvas"
+            width="400"
+            height="200"
+            style="border: 1px solid black"
+            >
+        </canvas>
+
+        <script>
+            const canvas =document.getElementById("mycanvas");
+            const ctx=canvas.getContext("2d");
+
+            ctx.fillStyle="red";
+            ctx.fillRect(0,0,150,100);
+        </script>
+            
+     
+     <!-- html entities-->
+      <p> less than symbol:&it;</p>
+      <p> greater than symbol: &Gt;</p>
+      <p> copyright symbol: &copy;;</p>
+      <p> trademark symbol: &trade;</p>
+      <p> non-breaking space example:</p>
+      <p>hello&nbsp;&nbsp;&nbsp;world</p>
+      <p>hello..............world</p>
+      </section>
+      <section>
+        <h2> special characters</h2>
+        <p> currency symbols:</p>
+        <ul> 
+            <li> dollar:$</li>
+            <li> euro:&euro;</li>
+            <li> yen:&yen;</li>
+            <li> rupee:;</li>
+        </ul>
+      </section>
+      <hr>
+      <section> 
+        <article> 
+            <h2> why clean html matters</h2>
+
+            <p> 
+                cleans html improves readability,
+                accessibility, maintainability, and seo performance.
+            </p>
+        </article>
+      </section>
+
+</body>
+</html>

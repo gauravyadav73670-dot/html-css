@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>day 3- forms</title>
 </head>
 <body>
+    <h1>User Forms - Day 4</h1>
+
+<hr>
     <!--===========================-->
     <h2> login form</h2>
     <form action="https://www.flipkart.com/" method="GET">
@@ -36,7 +39,75 @@
     
         
         <!-- submit button-->
-         <input type="submit" value="login"> 
+         <input type="submit" value="login">
+         <!-- DATE--> 
+          <label for=" dob">date of birth</label>
+          <input 
+          type="date"
+          id="dob"
+          name="dob"
+          >
+          <br><br>
+          <!-- GENDER (radio)-->
+           <p>GENDER:</p>
+           <input type="radio" id="male" name="gender" value="male">
+           <label for="male">male</label>
+           <input type="radio" id="female" name="gender" value="female">
+           <label for="female">female</label>
+           <br><br>
+           <!-- hobbies(checkbox)-->
+            <p> hobbies:</p>
+
+            <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Reading</label>
+
+    <input type="checkbox" id="sports" name="hobby" value="sports">
+    <label for="sports">Sports</label>
+
+    <input type="checkbox" id="music" name="hobby" value="music">
+    <label for="music">Music</label>
+
+    <br><br>
+
+    <!-- dropdown-->
+     <label for="course">select course:</label><br>
+
+     <select id="course" name="course">
+
+      <option value="">--select--</option>
+      <option value="btech">b.tech</option>  
+      <option value="bca">bca</option>  
+      <option value="mca">mca</option>  
+     </select>
+     <br>
+
+     <!-- file upload-->
+      <label for="resume">upload resume</label><br>
+      <input 
+        type="file"
+        id="resume"
+        name="resume"
+    >
+
+    <br><br>
+
+    <!-- textarea-->
+     <label for="bio">Short Bio:</label><br>
+
+    <textarea 
+        id="bio"
+        name="bio"
+        rows="4"
+        cols="30"
+        placeholder="Write about yourself..."
+    ></textarea>
+
+    <br><br>
+
+
+
+
+
     </form>
     <hr>
 
